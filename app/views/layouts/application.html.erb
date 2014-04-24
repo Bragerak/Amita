@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amita</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body
+<li>
+<%= link_to "Hjem", root_path %>
+<%= link_to "Om oss", welcome_about_path %>
+<%= link_to "Butikk", welcome_shop_path %>
+<%= link_to "Handlevogn", welcome_cart_path %>
+<%= link_to "Kontakt oss", welcome_contact_path %>
+</li>
+<%= yield %>
+
+</body>
+</html>
